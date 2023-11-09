@@ -4,20 +4,18 @@ Contains the class DBStorage
 """
 
 import models
-from models.amenity import Amenity
+from models.farm import Farm
 from models.base_model import BaseModel, Base
-from models.city import City
-from models.place import Place
-from models.review import Review
-from models.state import State
-from models.user import User
+from models.buildex import Buildex
+from models.solar import Solar
+from models.annie import Annie
 from os import getenv
 import sqlalchemy
 from sqlalchemy import create_engine
 from sqlalchemy.orm import scoped_session, sessionmaker
 
-classes = {"Amenity": Amenity, "City": City,
-           "Place": Place, "Review": Review, "State": State, "User": User}
+classes = {"Farm": Farm, "Buildex": Buildex,
+           "Solar": Solar, "Annie": Annie}
 
 
 class DBStorage:
@@ -27,17 +25,17 @@ class DBStorage:
 
     def __init__(self):
         """Instantiate a DBStorage object"""
-        HBNB_MYSQL_USER = getenv('HBNB_MYSQL_USER')
-        HBNB_MYSQL_PWD = getenv('HBNB_MYSQL_PWD')
-        HBNB_MYSQL_HOST = getenv('HBNB_MYSQL_HOST')
-        HBNB_MYSQL_DB = getenv('HBNB_MYSQL_DB')
-        HBNB_ENV = getenv('HBNB_ENV')
+        CHEKWASY_MYSQL_USER = getenv('CHEKWASY_MYSQL_USER')
+        CHEKWASY_MYSQL_PWD = getenv('CHEKWASY_MYSQL_PWD')
+        CHEKWASY_MYSQL_HOST = getenv('CHEKWASY_MYSQL_HOST')
+        CHEKWASY_MYSQL_DB = getenv('CHEKWASY_MYSQL_DB')
+        CHEKWASY_ENV = getenv('CHEKWASY_ENV')
         self.__engine = create_engine('mysql+mysqldb://{}:{}@{}/{}'.
-                                      format(HBNB_MYSQL_USER,
-                                             HBNB_MYSQL_PWD,
-                                             HBNB_MYSQL_HOST,
-                                             HBNB_MYSQL_DB))
-        if HBNB_ENV == "test":
+                                      format(CHEKWASY_MYSQL_USER,
+                                             CHEKWASY_MYSQL_PWD,
+                                             CHEKWASY_MYSQL_HOST,
+                                             CHEKWASY_MYSQL_DB))
+        if CHEKWASY_ENV == "test":
             Base.metadata.drop_all(self.__engine)
 
     def all(self, cls=None):

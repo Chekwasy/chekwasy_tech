@@ -5,17 +5,15 @@ Contains the FileStorage class
 
 import json
 import models
-from models.amenity import Amenity
+from models.farm import Farm
 from models.base_model import BaseModel
-from models.city import City
-from models.place import Place
-from models.review import Review
-from models.state import State
-from models.user import User
+from models.buildex import Buildex
+from models.solar import Solar
+from models.annie import Annie
 from hashlib import md5
 
-classes = {"Amenity": Amenity, "BaseModel": BaseModel, "City": City,
-           "Place": Place, "Review": Review, "State": State, "User": User}
+classes = {"Farm": Farm, "BaseModel": BaseModel, "Buildex": Buildex,
+           "Solar": Solar, "Annie": Annie}
 
 
 class FileStorage:
