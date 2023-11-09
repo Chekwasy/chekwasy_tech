@@ -1,0 +1,34 @@
+footer {
+
+    background-color: white;
+    height: 80px;
+    width: 100%;
+    border-top: 1px solid red;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    font-size: x-small;
+
+}
+footer p {
+    margin-bottom: 0px;
+}
+.Annie_footer {
+
+    background-color: white;
+    height: 80px;
+    width: 100%;
+    border-top: 1px solid darkblue;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    font-size: x-small;
+
+}
+.Annie_footer p {
+    margin-bottom: 0px;
+}

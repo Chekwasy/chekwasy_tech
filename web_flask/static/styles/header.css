@@ -1,0 +1,50 @@
+header {
+    height: 70px;
+    width: 100%;
+    border-bottom: 1px solid red;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    align-items: center;
+
+}
+.Annie {
+    height: 70px;
+    width: 100%;
+    border-bottom: 1px solid darkblue;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    align-items: center;
+
+}
+header > div {
+    height: 60px;
+    width: 60px;
+    background-image: url(../images/logo.jpeg);
+    background-size: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+.Annie > div {
+    height: 60px;
+    width: 60px;
+    background-image: url(../images/annie_pic_logo.jpeg);
+    background-size: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+header > h1 {
+    width: 50%;
+    color: gray;
+}
+.Annie > h1 {
+    width: 50%;
+    color: darkslategray;
+}

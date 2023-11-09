@@ -1,0 +1,544 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    color: #181818;
+    font-size: 16px;
+    font-family: Circular, "Helvetica Neue",Helvetica,Arial,sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    align-items: center;
+    width: 100%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+}
+.farm {
+    align-items: center;
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+}
+.farm h5 {
+    margin-bottom: 5px;
+}
+.farm h6 {
+    margin-top: 3px;
+}
+.farm_details {
+    align-items: center;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+/* for form */
+form {
+    align-items: center;
+    width: 350px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+form .form_note > p {
+    font-size: x-small;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-right: 50px;
+}
+form .form_details p {
+    align-items: center;
+    display: flex;
+    flex-direction: rw;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: x-small;
+}
+form h6 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#chekwasy_annie_form h6 {
+    margin-right: 50px;
+}
+#chekwasy_farm_form .form_note p {
+    font-size: x-small;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-left: 30px;
+}
+.farm_pic {
+    height: 350px;
+    width: 300px;
+    background-image: url(../images/farm_pic.jpeg);
+    background-size: 300px 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.farm_details p {
+    font-size: smaller;
+    margin: 0%;
+}
+.farm_details h5 {
+    margin: 10px;
+}
+.buildex {
+    align-items: center;
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+}
+.buildex h5 {
+    margin-bottom: 0px;
+}
+.buildex_details {
+    align-items: center;
+    width: 250px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.buildex_pic {
+    height: 250px;
+    width: 250px;
+    margin-top: 30px;
+    background-image: url(../images/buildex_pic.jpeg);
+    background-size: 250px 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.buildex_details p {
+    font-size: smaller;
+    text-align: center;
+    margin: 0%;
+}
+.buildex_details h5 {
+    margin: 10px;
+}
+.solar {
+    align-items: center;
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+}
+.solar_details {
+    align-items: center;
+    width: 250px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.solar_pic {
+    height: 250px;
+    width: 250px;
+    margin-top: 30px;
+    background-image: url(../images/solar_pic.jpeg);
+    background-size: 250px 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.solar_details h5 {
+    margin: 10px;
+    text-align: center;
+}
+.solar_details p {
+    font-size: smaller;
+    text-align: center;
+    margin: 0%;
+}
+.solar h5 {
+    margin-bottom: 0px;
+}
+.annie {
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+}
+.annie_details {
+    align-items: center;
+    width: 250px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.annie_pic {
+    height: 250px;
+    width: 250px;
+    margin-top: 30px;
+    background-image: url(../images/annie_pic.jpeg);
+    background-size: 250px 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.annie_details p {
+    text-align: center;
+    font-size: smaller;
+    margin: 0%;
+}
+.annie_details h5 {
+    text-align: center;
+    margin: 10px;
+}
+/* for farm */
+.farm_all {
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.farm_all_pic1 {
+    height: 250px;
+    width: 250px;
+    margin-top: 30px;
+    background-image: url(../images/farm_all_pic1.jpeg);
+    background-size: 250px 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.farm_all_pic2 {
+    height: 250px;
+    width: 250px;
+    margin-top: 30px;
+    background-image: url(../images/farm_all_pic2.jpeg);
+    background-size: 250px 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.farm_all_pic3 {
+    height: 250px;
+    width: 250px;
+    margin-top: 30px;
+    background-image: url(../images/farm_all_pic3.jpeg);
+    background-size: 250px 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.farm_all2_pic1 {
+    height: 350px;
+    width: 450px;
+    margin-top: 0px;
+    background-image: url(../images/farm_all2_pic1.jpeg);
+    background-size: 450px 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/*for buildex*/
+.buildex_all {
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.buildex_all_pic1 {
+    height: 350px;
+    width: 450px;
+    margin-top: 30px;
+    background-image: url(../images/buildex_all_pic1.jpeg);
+    background-size: 450px 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.buildex_all_pic2 {
+    height: 250px;
+    width: 450px;
+    margin-top: 30px;
+    background-image: url(../images/buildex_all_pic2.jpeg);
+    background-size: 450px 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.buildex_all_pic3 {
+    height: 200px;
+    width: 450px;
+    margin-top: 30px;
+    background-image: url(../images/buildex_all_pic3.jpeg);
+    background-size: 450px 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.buildex_all_pic4 {
+    height: 350px;
+    width: 450px;
+    margin-top: 30px;
+    background-image: url(../images/buildex_all_pic4.jpeg);
+    background-size: 450px 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.buildex_all_pic5 {
+    height: 350px;
+    width: 450px;
+    margin-top: 30px;
+    background-image: url(../images/buildex_all_pic5.jpeg);
+    background-size: 450px 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.buildex_all_pic6 {
+    height: 350px;
+    width: 450px;
+    margin-top: 30px;
+    background-image: url(../images/buildex_all_pic6.jpeg);
+    background-size: 450px 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.buildex_all_pic7 {
+    height: 350px;
+    width: 450px;
+    margin-top: 30px;
+    background-image: url(../images/buildex_all_pic7.jpeg);
+    background-size: 450px 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.buildex_all_pic8 {
+    height: 350px;
+    width: 450px;
+    margin-top: 30px;
+    background-image: url(../images/buildex_all_pic8.jpeg);
+    background-size: 450px 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.buildex_all_pic9 {
+    height: 350px;
+    width: 450px;
+    margin-top: 30px;
+    background-image: url(../images/buildex_all_pic9.jpeg);
+    background-size: 450px 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/*for solar */
+.solar_all {
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.solar_all_pic1 {
+    height: 350px;
+    width: 350px;
+    margin-top: 30px;
+    background-image: url(../images/solar_all_pic1.jpeg);
+    background-size: 350px 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.solar_all_pic2 {
+    height: 350px;
+    width: 350px;
+    margin-top: 30px;
+    background-image: url(../images/solar_all_pic2.jpeg);
+    background-size: 350px 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.solar_all_pic3 {
+    height: 350px;
+    width: 350px;
+    margin-top: 30px;
+    background-image: url(../images/solar_all_pic3.jpeg);
+    background-size: 350px 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.solar_all_pic4 {
+    height: 350px;
+    width: 350px;
+    margin-top: 30px;
+    background-image: url(../images/solar_all_pic4.jpeg);
+    background-size: 350px 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.solar_all_pic5 {
+    height: 350px;
+    width: 350px;
+    margin-top: 30px;
+    background-image: url(../images/solar_all_pic5.jpeg);
+    background-size: 350px 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.solar_all_pic6 {
+    height: 350px;
+    width: 350px;
+    margin-top: 30px;
+    background-image: url(../images/solar_all_pic6.jpeg);
+    background-size: 350px 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.solar_all_pic7 {
+    height: 350px;
+    width: 350px;
+    margin-top: 30px;
+    background-image: url(../images/solar_all_pic7.jpeg);
+    background-size: 350px 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.solar_all_pic8 {
+    height: 350px;
+    width: 350px;
+    margin-top: 30px;
+    background-image: url(../images/solar_all_pic8.jpeg);
+    background-size: 350px 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.solar_all_pic9 {
+    height: 350px;
+    width: 350px;
+    margin-top: 30px;
+    background-image: url(../images/solar_all_pic9.jpeg);
+    background-size: 350px 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.solar_all_pic10 {
+    height: 350px;
+    width: 350px;
+    margin-top: 30px;
+    background-image: url(../images/solar_all_pic10.jpeg);
+    background-size: 350px 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* for Annie */
+.annie_wears {
+    width: 500px;
+    height: auto;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+    flex: 1 0 auto;
+}
+.annie_wears > div {
+    width: 250px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.annie_wears > div > h4 {
+    text-align: center;
+}
+.t_all_pic1 {
+    height: 250px;
+    width: 200px;
+    margin-top: 30px;
+    align-self: center;
+    background-image: url(../images/t_all_pic1.jpeg);
+    background-size: 200px 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.annie_wears p {
+    border: 1px solid black;
+    width: 30px;
+    background-color: black;
+    text-decoration-color: white;
+    color: white;
+    border-radius: 5px;
+}
+.t_all_pic2 {
+    height: 250px;
+    width: 200px;
+    margin-top: 30px;
+    align-self: center;
+    background-image: url(../images/t_all_pic2.jpeg);
+    background-size: 200px 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.t_all_pic3 {
+    height: 250px;
+    width: 200px;
+    margin-top: 30px;
+    align-self: center;
+    background-image: url(../images/t_all_pic3.jpeg);
+    background-size: 200px 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.t_all_pic4 {
+    height: 250px;
+    width: 200px;
+    margin-top: 30px;
+    align-self: center;
+    background-image: url(../images/t_all_pic4.jpeg);
+    background-size: 200px 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.t_all_pic5 {
+    height: 250px;
+    width: 200px;
+    margin-top: 30px;
+    align-self: center;
+    background-image: url(../images/t_all_pic5.jpeg);
+    background-size: 200px 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.c_all_pic1 {
+    height: 250px;
+    width: 200px;
+    margin-top: 30px;
+    align-self: center;
+    background-image: url(../images/c_all_pic1.jpeg);
+    background-size: 200px 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.c_all_pic2 {
+    height: 250px;
+    width: 200px;
+    margin-top: 30px;
+    align-self: center;
+    background-image: url(../images/c_all_pic2.jpeg);
+    background-size: 200px 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.c_all_pic3 {
+    height: 250px;
+    width: 200px;
+    margin-top: 30px;
+    align-self: center;
+    background-image: url(../images/c_all_pic3.jpeg);
+    background-size: 200px 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.c_all_pic4 {
+    height: 250px;
+    width: 200px;
+    margin-top: 30px;
+    align-self: center;
+    background-image: url(../images/c_all_pic4.jpeg);
+    background-size: 200px 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.c_all_pic5 {
+    height: 250px;
+    width: 200px;
+    margin-top: 30px;
+    align-self: center;
+    background-image: url(../images/c_all_pic5.jpeg);
+    background-size: 200px 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+}

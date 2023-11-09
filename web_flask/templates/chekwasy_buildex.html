@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Chekwasy Buildex</title>
+    <link rel="stylesheet" type="text/css" href="styles/common.css" />
+    <link rel="stylesheet" type="text/css" href="styles/header.css" />
+    <link rel="stylesheet" type="text/css" href="styles/footer.css" />
+    <link rel='shortcut icon' href="images/icon.jpeg" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  </head>
+
+  <body>
+    <header title="Chekwasy Buildex">
+      <div></div>
+      <h1>Chekwasy Buildex</h1>
+    </header>
+    <div class="container">
+      <div class="buildex">
+	<div class="buildex_details">
+	  <div class="buildex_pic"></div>
+	  <h5>Chekwasy Buildex</h5>
+	  <p>Make your request based on your proposed building</p>
+	  <p>or select from our options.</p>
+	  <p>Building range from flats, duplex, complex,</p>
+	  <p>to a good number of construction projects</p>
+	  <p class="buildex_here">Click here to make an enquiry</p>
+	</div>
+	<form action="http://chekwasy.tech/chekwasy_buildex/enquiry" id="chekwasy_buildex_form" method="post">
+	  <h5>Enter the details of your proposed plan</h5>
+	  <div class="form_note"><p>Note: We all email you to schedule a meeting based on your proposed building</p></div>
+	  <div class="form_details">
+	    <p>First name<p><input type="text" name="first_name" required maxlength="40" placeholder="Richard"></p></p>
+	    <p>Last name<p><input type="text" name="last_name" maxlength="40" required placeholder="Chekwas"></p></p>
+	    <p>Proposed building<p><input type="text" name="proposed_build" required maxlength="30" placeholder="flat, duplex, renovation .."></p></p>
+	    <p>Phone number<p><input type="text" name="phone" maxlength="11" required placeholder="08xxxxxxxx4"></p></p>
+	    <p>Email<p><input type="email" name="email" maxlength="100" required placeholder="abc@chekwasy.tech"></p></p>
+	    <p>Land Area in feet<p><input type="text" name="land_area" required maxlength="30" placeholder="50ft by 100ft"></p></p>
+	    <p>Expected building area<p><input type="text" name="build_area" maxlength="30" required placeholder="10m by 12m"></p></p>
+	    <p>Number of room<p><input type="number" name="room" max="10" required placeholder="5"></p></p>
+	    <p>Number of bathroom<p><input type="text" name="bathroom" max="10" required placeholder="5"></p></p>
+	    <p>State of expected project<p><input type="text" name="state" maxlength="30" required placeholder="Lagos"></p></p>
+	    <p>City of expected project<p><input type="text" name="city" maxlength="30" required placeholder="Surulere"></p></p>
+	    <p><p><textarea name="others" cols="30" rows="5" maxlength="200"  placeholder="Add other description here"></textarea></p></p>
+	    <p><button type="submit">Submit</button></p>
+	  </div>
+	</form>
+      </div>
+      <div class="buildex_all">
+	<div class="buildex_all_pic1"></div>
+	<div class="buildex_all_pic2"></div>
+	<div class="buildex_all_pic3"></div>
+	<div class="buildex_all_pic4"></div>
+	<div class="buildex_all_pic5"></div>
+	<div class="buildex_all_pic6"></div>
+	<div class="buildex_all_pic7"></div>
+	<div class="buildex_all_pic8"></div>
+	<div class="buildex_all_pic9"></div>
+      </div>
+    </div>
+    <footer>
+      <p>Phone: 08168732525</p>
+      <p>Email: chekwasybuildex@gmail.com</p>
+      <p>Copyright © 2023 Chekwasy All rights reserved</p>
+    </footer>
+    <script type="text/javascript" src="scripts/chekwasy_buildex_script.js"></script>
+  </body>
+
+  </html>
