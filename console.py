@@ -4,22 +4,20 @@
 import cmd
 from datetime import datetime
 import models
-from models.amenity import Amenity
+from models.farm import Farm
 from models.base_model import BaseModel
-from models.city import City
-from models.place import Place
-from models.review import Review
-from models.state import State
-from models.user import User
+from models.buildex import Buildex
+from models.solar import Solar
+from models.annie import Annie
 import shlex  # for splitting the line along spaces except in double quotes
 
-classes = {"Amenity": Amenity, "BaseModel": BaseModel, "City": City,
-           "Place": Place, "Review": Review, "State": State, "User": User}
+classes = {"Farm": Farm, "BaseModel": BaseModel, "Buildex": Buildex,
+           "Solar": Solar, "Annie": Annie}
 
 
-class HBNBCommand(cmd.Cmd):
-    """ HBNH console """
-    prompt = '(hbnb) '
+class CHEKWASYCommand(cmd.Cmd):
+    """ Chekwasy console """
+    prompt = '(chekwasy) '
 
     def do_EOF(self, arg):
         """Exits console"""
@@ -125,9 +123,9 @@ class HBNBCommand(cmd.Cmd):
     def do_update(self, arg):
         """Update an instance based on the class name, id, attribute & value"""
         args = shlex.split(arg)
-        integers = ["number_rooms", "number_bathrooms", "max_guest",
-                    "price_by_night"]
-        floats = ["latitude", "longitude"]
+        integers = ["amount", "order_qty", "room",
+                    "bathroom"]
+        floats = []
         if len(args) == 0:
             print("** class name missing **")
         elif args[0] in classes:
@@ -161,4 +159,4 @@ class HBNBCommand(cmd.Cmd):
             print("** class doesn't exist **")
 
 if __name__ == '__main__':
-    HBNBCommand().cmdloop()
+    CHEKWASYCommand().cmdloop()
