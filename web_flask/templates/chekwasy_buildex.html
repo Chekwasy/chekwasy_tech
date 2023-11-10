@@ -27,25 +27,25 @@
 	  <p>to a good number of construction projects</p>
 	  <p class="buildex_here">Click here to make an enquiry</p>
 	</div>
-	<form id="chekwasy_farm_form" method="post">
-	  <h5>Fill in your information to place your order</h5>
-	  <h6>Account Number: 1224611018</h6>
-	  <h6>Account Name: Chekwasy Farm</h6>
-	  <h6>Bank Name: Zenith Bank</h6></h6>
-<div class="form_note"><p>Note: minimum order is 5 packs. <strong>5packs N25,000, 10packs N40,000</strong> If name of sender is different from name entered here, enter your name as reference</p></div>
-<div class="form_details">
-  <p>First name<p><input type="text" id="first_name" maxlength="40" placeholder="Richard" required></p></p>
-  <p>Last name<p><input type="text" id="last_name" maxlength="40" placeholder="Chekwas" required></p></p>
-  <p>Phone number<p><input type="tel" id="phone" maxlength="11" placeholder="08xxxxxxxx5" required></p></p>
-  <p>Email<p><input type="email" id="email" maxlength="100" placeholder="abc@chekwasy.tech" required></p></p>
-  <p>Reference<p><input type="text" id="reference" maxlength="80" placeholder="Wisdom Paul" required></p></p>
-  <p>State<p><input type="text" id="state" maxlength="30" placeholder="Lagos" required></p></p>
-  <p>City (Eg. Surulere)<p><input type="text" maxlength="30" id="city" placeholder="Surulere" required></p></p>
-  <p>Street<p><input type="text" maxlength="100" id="street"></p></p>
-  <p>Order Quantity<p><input type="number" min="5" max="100" id="order_qty" placeholder="10" required></p></p>
-  <p><button type="submit">Order</button><input type="reset" id="rst"></p>
-</div>
-            </form>
+	<form id="chekwasy_buildex_form" method="post">
+	  <h5>Enter the details of your proposed plan</h5>
+	  <div class="form_note"><p>Note: We all email you to schedule a meeting based on your proposed building</p></div>
+	  <div class="form_details">
+	    <p>First name<p><input type="text" id="first_name" required maxlength="40" placeholder="Richard"></p></p>
+	    <p>Last name<p><input type="text" id="last_name" maxlength="40" required placeholder="Chekwas"></p></p>
+	    <p>Proposed building<p><input type="text" id="proposed_build" required maxlength="30" placeholder="flat, duplex, renovation .."></p></p>
+	    <p>Phone number<p><input type="tel" id="phone" maxlength="11" required placeholder="08xxxxxxxx4"></p></p>
+	    <p>Email<p><input type="email" id="email" maxlength="100" required placeholder="abc@chekwasy.tech"></p></p>
+	    <p>Land Area in feet<p><input type="text" id="land_area" required maxlength="30" placeholder="50ft by 100ft"></p></p>
+	    <p>Expected building area<p><input type="text" id="build_area" maxlength="30" required placeholder="10m by 12m"></p></p>
+	    <p>Number of room<p><input type="number" id="room" max="10" required placeholder="5"></p></p>
+	    <p>Number of bathroom<p><input type="number" id="bathroom" max="10" required placeholder="5"></p></p>
+	    <p>State of expected project<p><input type="text" id="state" maxlength="30" required placeholder="Lagos"></p></p>
+	    <p>City of expected project<p><input type="text" id="city" maxlength="30" required placeholder="Surulere"></p></p>
+	    <p><p><textarea id="others" cols="30" rows="5" maxlength="200"  placeholder="Add other description here"></textarea></p></p>
+	    <p><button type="submit">Submit</button><input type="reset" id="rst"></p>
+	  </div>
+	</form>
       </div>
       <div class="buildex_all">
 	<div class="buildex_all_pic1"></div>

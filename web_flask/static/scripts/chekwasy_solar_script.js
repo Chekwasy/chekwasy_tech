@@ -1,10 +1,10 @@
 $(document).ready(function() {
-    $( '#chekwasy_annie_form' ).on( "submit", function( event ) {
+    $( '#chekwasy_solar_form' ).on( "submit", function( event ) {
 	const api = 'http://' + "chekwasy.tech";
 	$.ajax({
-	    url: api + '/api/v1/annie_couture/order',
+	    url: api + '/api/v1/chekwasy_solar/order',
 	    type: 'POST',
-	    data: JSON.stringify({first_name: $('#first_name').val(), last_name: $('#last_name').val(), phone: $('#phone').val(), email: $('#email').val(), choice: $('#choice').val(), state: $('#state').val(), city: $('#city').val(), street: $('#street').val(), others: $('#others').val(), link: $('#link').val()}),
+	    data: JSON.stringify({first_name: $('#first_name').val(), last_name: $('#last_name').val(), phone: $('#phone').val(), email: $('#email').val(), amount: $('#amount').val(), state: $('#state').val(), city: $('#city').val(), street: $('#street').val(), others: $('#others').val()}),
 	    contentType: 'application/json',
 	    dataType: 'json'
 	})
