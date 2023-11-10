@@ -1,0 +1,7 @@
+export CHEKWASY_MYSQL_USER=chekwasy_dev 
+export CHEKWASY_MYSQL_PWD=CHEKWASY_dev_pwd_001
+export CHEKWASY_MYSQL_HOST=localhost
+export CHEKWASY_MYSQL_DB=chekwasy_dev_db 
+export CHEKWASY_TYPE_STORAGE=db 
+export CHEKWASY_API_HOST=0.0.0.0 
+export CHEKWASY_API_PORT=5000

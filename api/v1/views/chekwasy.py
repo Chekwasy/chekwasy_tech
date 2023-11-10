@@ -7,7 +7,7 @@ from models.annie import Annie
 from models import storage
 from api.v1.views import app_views
 from flask import abort, jsonify, make_response, request
-from flasgger.utils import swag_from
+
 
 
 

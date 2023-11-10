@@ -208,7 +208,7 @@ form h6 {
     height: 250px;
     width: 250px;
     margin-top: 30px;
-    background-image: url(../images/farm_all_pic2.jpeg);
+    background-image: url(../static/images/farm_all_pic2.jpeg);
     background-size: 250px 250px;
     background-position: center;
     background-repeat: no-repeat;
@@ -217,7 +217,7 @@ form h6 {
     height: 250px;
     width: 250px;
     margin-top: 30px;
-    background-image: url(../images/farm_all_pic3.jpeg);
+    background-image: url(../static/images/farm_all_pic3.jpeg);
     background-size: 250px 250px;
     background-position: center;
     background-repeat: no-repeat;
@@ -226,7 +226,7 @@ form h6 {
     height: 350px;
     width: 450px;
     margin-top: 0px;
-    background-image: url(../images/farm_all2_pic1.jpeg);
+    background-image: url(../static/images/farm_all2_pic1.jpeg);
     background-size: 450px 350px;
     background-position: center;
     background-repeat: no-repeat;
@@ -242,7 +242,7 @@ form h6 {
     height: 350px;
     width: 450px;
     margin-top: 30px;
-    background-image: url(../images/buildex_all_pic1.jpeg);
+    background-image: url(../static/images/buildex_all_pic1.jpeg);
     background-size: 450px 350px;
     background-position: center;
     background-repeat: no-repeat;
@@ -251,7 +251,7 @@ form h6 {
     height: 250px;
     width: 450px;
     margin-top: 30px;
-    background-image: url(../images/buildex_all_pic2.jpeg);
+    background-image: url(../static/images/buildex_all_pic2.jpeg);
     background-size: 450px 250px;
     background-position: center;
     background-repeat: no-repeat;
@@ -260,7 +260,7 @@ form h6 {
     height: 200px;
     width: 450px;
     margin-top: 30px;
-    background-image: url(../images/buildex_all_pic3.jpeg);
+    background-image: url(../static/images/buildex_all_pic3.jpeg);
     background-size: 450px 200px;
     background-position: center;
     background-repeat: no-repeat;
@@ -269,7 +269,7 @@ form h6 {
     height: 350px;
     width: 450px;
     margin-top: 30px;
-    background-image: url(../images/buildex_all_pic4.jpeg);
+    background-image: url(../static/images/buildex_all_pic4.jpeg);
     background-size: 450px 350px;
     background-position: center;
     background-repeat: no-repeat;
@@ -278,7 +278,7 @@ form h6 {
     height: 350px;
     width: 450px;
     margin-top: 30px;
-    background-image: url(../images/buildex_all_pic5.jpeg);
+    background-image: url(../static/images/buildex_all_pic5.jpeg);
     background-size: 450px 350px;
     background-position: center;
     background-repeat: no-repeat;
@@ -287,7 +287,7 @@ form h6 {
     height: 350px;
     width: 450px;
     margin-top: 30px;
-    background-image: url(../images/buildex_all_pic6.jpeg);
+    background-image: url(../static/images/buildex_all_pic6.jpeg);
     background-size: 450px 350px;
     background-position: center;
     background-repeat: no-repeat;
@@ -296,7 +296,7 @@ form h6 {
     height: 350px;
     width: 450px;
     margin-top: 30px;
-    background-image: url(../images/buildex_all_pic7.jpeg);
+    background-image: url(../static/images/buildex_all_pic7.jpeg);
     background-size: 450px 350px;
     background-position: center;
     background-repeat: no-repeat;
@@ -305,7 +305,7 @@ form h6 {
     height: 350px;
     width: 450px;
     margin-top: 30px;
-    background-image: url(../images/buildex_all_pic8.jpeg);
+    background-image: url(../static/images/buildex_all_pic8.jpeg);
     background-size: 450px 350px;
     background-position: center;
     background-repeat: no-repeat;
@@ -314,7 +314,7 @@ form h6 {
     height: 350px;
     width: 450px;
     margin-top: 30px;
-    background-image: url(../images/buildex_all_pic9.jpeg);
+    background-image: url(../static/images/buildex_all_pic9.jpeg);
     background-size: 450px 350px;
     background-position: center;
     background-repeat: no-repeat;
@@ -330,7 +330,7 @@ form h6 {
     height: 350px;
     width: 350px;
     margin-top: 30px;
-    background-image: url(../images/solar_all_pic1.jpeg);
+    background-image: url(../static/images/solar_all_pic1.jpeg);
     background-size: 350px 350px;
     background-position: center;
     background-repeat: no-repeat;
@@ -339,7 +339,7 @@ form h6 {
     height: 350px;
     width: 350px;
     margin-top: 30px;
-    background-image: url(../images/solar_all_pic2.jpeg);
+    background-image: url(../static/images/solar_all_pic2.jpeg);
     background-size: 350px 350px;
     background-position: center;
     background-repeat: no-repeat;
@@ -348,7 +348,7 @@ form h6 {
     height: 350px;
     width: 350px;
     margin-top: 30px;
-    background-image: url(../images/solar_all_pic3.jpeg);
+    background-image: url(../static/images/solar_all_pic3.jpeg);
     background-size: 350px 350px;
     background-position: center;
     background-repeat: no-repeat;
@@ -357,7 +357,7 @@ form h6 {
     height: 350px;
     width: 350px;
     margin-top: 30px;
-    background-image: url(../images/solar_all_pic4.jpeg);
+    background-image: url(../static/images/solar_all_pic4.jpeg);
     background-size: 350px 350px;
     background-position: center;
     background-repeat: no-repeat;
@@ -366,7 +366,7 @@ form h6 {
     height: 350px;
     width: 350px;
     margin-top: 30px;
-    background-image: url(../images/solar_all_pic5.jpeg);
+    background-image: url(../static/images/solar_all_pic5.jpeg);
     background-size: 350px 350px;
     background-position: center;
     background-repeat: no-repeat;
@@ -375,7 +375,7 @@ form h6 {
     height: 350px;
     width: 350px;
     margin-top: 30px;
-    background-image: url(../images/solar_all_pic6.jpeg);
+    background-image: url(../static/images/solar_all_pic6.jpeg);
     background-size: 350px 350px;
     background-position: center;
     background-repeat: no-repeat;
@@ -384,7 +384,7 @@ form h6 {
     height: 350px;
     width: 350px;
     margin-top: 30px;
-    background-image: url(../images/solar_all_pic7.jpeg);
+    background-image: url(../static/images/solar_all_pic7.jpeg);
     background-size: 350px 350px;
     background-position: center;
     background-repeat: no-repeat;
@@ -393,7 +393,7 @@ form h6 {
     height: 350px;
     width: 350px;
     margin-top: 30px;
-    background-image: url(../images/solar_all_pic8.jpeg);
+    background-image: url(../static/images/solar_all_pic8.jpeg);
     background-size: 350px 350px;
     background-position: center;
     background-repeat: no-repeat;
@@ -402,7 +402,7 @@ form h6 {
     height: 350px;
     width: 350px;
     margin-top: 30px;
-    background-image: url(../images/solar_all_pic9.jpeg);
+    background-image: url(../static/images/solar_all_pic9.jpeg);
     background-size: 350px 350px;
     background-position: center;
     background-repeat: no-repeat;
@@ -411,7 +411,7 @@ form h6 {
     height: 350px;
     width: 350px;
     margin-top: 30px;
-    background-image: url(../images/solar_all_pic10.jpeg);
+    background-image: url(../static/images/solar_all_pic10.jpeg);
     background-size: 350px 350px;
     background-position: center;
     background-repeat: no-repeat;
@@ -439,7 +439,7 @@ form h6 {
     width: 200px;
     margin-top: 30px;
     align-self: center;
-    background-image: url(../images/t_all_pic1.jpeg);
+    background-image: url(../static/images/t_all_pic1.jpeg);
     background-size: 200px 250px;
     background-position: center;
     background-repeat: no-repeat;
@@ -457,7 +457,7 @@ form h6 {
     width: 200px;
     margin-top: 30px;
     align-self: center;
-    background-image: url(../images/t_all_pic2.jpeg);
+    background-image: url(../static/images/t_all_pic2.jpeg);
     background-size: 200px 250px;
     background-position: center;
     background-repeat: no-repeat;
@@ -467,7 +467,7 @@ form h6 {
     width: 200px;
     margin-top: 30px;
     align-self: center;
-    background-image: url(../images/t_all_pic3.jpeg);
+    background-image: url(../static/images/t_all_pic3.jpeg);
     background-size: 200px 250px;
     background-position: center;
     background-repeat: no-repeat;
@@ -477,7 +477,7 @@ form h6 {
     width: 200px;
     margin-top: 30px;
     align-self: center;
-    background-image: url(../images/t_all_pic4.jpeg);
+    background-image: url(../static/images/t_all_pic4.jpeg);
     background-size: 200px 250px;
     background-position: center;
     background-repeat: no-repeat;
@@ -487,7 +487,7 @@ form h6 {
     width: 200px;
     margin-top: 30px;
     align-self: center;
-    background-image: url(../images/t_all_pic5.jpeg);
+    background-image: url(../static/images/t_all_pic5.jpeg);
     background-size: 200px 250px;
     background-position: center;
     background-repeat: no-repeat;
@@ -497,7 +497,7 @@ form h6 {
     width: 200px;
     margin-top: 30px;
     align-self: center;
-    background-image: url(../images/t_all_pic6.jpeg);
+    background-image: url(../static/images/t_all_pic6.jpeg);
     background-size: 200px 250px;
     background-position: center;
     background-repeat: no-repeat;
@@ -507,7 +507,7 @@ form h6 {
     width: 200px;
     margin-top: 30px;
     align-self: center;
-    background-image: url(../images/t_all_pic7.jpeg);
+    background-image: url(../static/images/t_all_pic7.jpeg);
     background-size: 200px 250px;
     background-position: center;
     background-repeat: no-repeat;
@@ -517,7 +517,7 @@ form h6 {
     width: 200px;
     margin-top: 30px;
     align-self: center;
-    background-image: url(../images/t_all_pic8.jpeg);
+    background-image: url(../static/images/t_all_pic8.jpeg);
     background-size: 200px 250px;
     background-position: center;
     background-repeat: no-repeat;
@@ -527,7 +527,7 @@ form h6 {
     width: 200px;
     margin-top: 30px;
     align-self: center;
-    background-image: url(../images/t_all_pic9.jpeg);
+    background-image: url(../static/images/t_all_pic9.jpeg);
     background-size: 200px 250px;
     background-position: center;
     background-repeat: no-repeat;
@@ -537,7 +537,7 @@ form h6 {
     width: 200px;
     margin-top: 30px;
     align-self: center;
-    background-image: url(../images/t_all_pic10.jpeg);
+    background-image: url(../static/images/t_all_pic10.jpeg);
     background-size: 200px 250px;
     background-position: center;
     background-repeat: no-repeat;
@@ -547,7 +547,7 @@ form h6 {
     width: 200px;
     margin-top: 30px;
     align-self: center;
-    background-image: url(../images/c_all_pic1.jpeg);
+    background-image: url(../static/images/c_all_pic1.jpeg);
     background-size: 200px 250px;
     background-position: center;
     background-repeat: no-repeat;
@@ -557,7 +557,7 @@ form h6 {
     width: 200px;
     margin-top: 30px;
     align-self: center;
-    background-image: url(../images/c_all_pic2.jpeg);
+    background-image: url(../static/images/c_all_pic2.jpeg);
     background-size: 200px 250px;
     background-position: center;
     background-repeat: no-repeat;
@@ -567,7 +567,7 @@ form h6 {
     width: 200px;
     margin-top: 30px;
     align-self: center;
-    background-image: url(../images/c_all_pic3.jpeg);
+    background-image: url(../static/images/c_all_pic3.jpeg);
     background-size: 200px 250px;
     background-position: center;
     background-repeat: no-repeat;
@@ -577,7 +577,7 @@ form h6 {
     width: 200px;
     margin-top: 30px;
     align-self: center;
-    background-image: url(../images/c_all_pic4.jpeg);
+    background-image: url(../static/images/c_all_pic4.jpeg);
     background-size: 200px 250px;
     background-position: center;
     background-repeat: no-repeat;
@@ -587,7 +587,7 @@ form h6 {
     width: 200px;
     margin-top: 30px;
     align-self: center;
-    background-image: url(../images/c_all_pic5.jpeg);
+    background-image: url(../static/images/c_all_pic5.jpeg);
     background-size: 200px 250px;
     background-position: center;
     background-repeat: no-repeat;
@@ -597,7 +597,7 @@ form h6 {
     width: 200px;
     margin-top: 30px;
     align-self: center;
-    background-image: url(../images/c_all_pic6.jpeg);
+    background-image: url(../static/images/c_all_pic6.jpeg);
     background-size: 200px 250px;
     background-position: center;
     background-repeat: no-repeat;
@@ -607,7 +607,7 @@ form h6 {
     width: 200px;
     margin-top: 30px;
     align-self: center;
-    background-image: url(../images/c_all_pic7.jpeg);
+    background-image: url(../static/images/c_all_pic7.jpeg);
     background-size: 200px 250px;
     background-position: center;
     background-repeat: no-repeat;
@@ -617,7 +617,7 @@ form h6 {
     width: 200px;
     margin-top: 30px;
     align-self: center;
-    background-image: url(../images/c_all_pic8.jpeg);
+    background-image: url(../static/images/c_all_pic8.jpeg);
     background-size: 200px 250px;
     background-position: center;
     background-repeat: no-repeat;
@@ -627,7 +627,7 @@ form h6 {
     width: 200px;
     margin-top: 30px;
     align-self: center;
-    background-image: url(../images/c_all_pic9.jpeg);
+    background-image: url(../static/images/c_all_pic9.jpeg);
     background-size: 200px 250px;
     background-position: center;
     background-repeat: no-repeat;
@@ -637,7 +637,7 @@ form h6 {
     width: 200px;
     margin-top: 30px;
     align-self: center;
-    background-image: url(../images/c_all_pic10.jpeg);
+    background-image: url(../static/images/c_all_pic10.jpeg);
     background-size: 200px 250px;
     background-position: center;
     background-repeat: no-repeat;
