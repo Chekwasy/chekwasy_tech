@@ -25,20 +25,20 @@
 	  <p>gadgets and packages that will definitely suit</p>
 	  <p>your need at an affordable price.</p>
 	</div>
-	<form action="http://" + window.location.hostname + "/api/v1/chekwasy_solar/order" id="chekwasy_solar_form" method="post">
+	<form id="chekwasy_solar_form" method="post">
 	  <h5>Place an order by filling the details below</h5>
 	  <div class="form_note"><p>Note: Full payment before delivery</p></div>
 	  <div class="form_details">
-	    <p>First name<p><input type="text" name="first_name" maxlength="40" required placeholder="Richy"></p></p>
-	    <p>Last name<p><input type="text" name="last_name" maxlength="40" required placeholder="Chek"></p></p>
-	    <p>Enter the amount of choice made<p><input type="number" name="amount" max="2100000" min="140000" required placeholder="140000"></p></p>
-	    <p>Phone number<p><input type="text" name="phone" maxlength="11" required placeholder="08xxxxxxxx4"></p></p>
-	    <p>Email<p><input type="email" name="email" required maxlength="100" placeholder="abc@chekwasy.tech"></p></p>
-	    <p>State<p><input type="text" name="state" maxlength="30" required placeholder="Lagos"></p></p>
-	    <p>City (Eg. Surulere)<p><input type="text" name="city" maxlength="30" required placeholder="Surulere"></p></p>
-	    <p>Street<p><input type="text" name="street" maxlength="100"></p></p>
-	    <p><p><textarea name="others" cols="30" rows="5" maxlength="200" placeholder="Add a note for delivery"></textarea></p></p>
-	    <p><button id="chekwasy_solar_form_botton">Order</button></p>
+	    <p>First name<p><input type="text" id="first_name" maxlength="40" required placeholder="Richy"></p></p>
+	    <p>Last name<p><input type="text" id="last_name" maxlength="40" required placeholder="Chek"></p></p>
+	    <p>Enter the amount of choice made<p><input type="number" id="amount" max="2100000" min="140000" required placeholder="140000"></p></p>
+	    <p>Phone number<p><input type="tel" id="phone" maxlength="11" required placeholder="08xxxxxxxx4"></p></p>
+	    <p>Email<p><input type="email" id="email" required maxlength="100" placeholder="abc@chekwasy.tech"></p></p>
+	    <p>State<p><input type="text" id="state" maxlength="30" required placeholder="Lagos"></p></p>
+	    <p>City (Eg. Surulere)<p><input type="text" id="city" maxlength="30" required placeholder="Surulere"></p></p>
+	    <p>Street<p><input type="text" id="street" maxlength="100"></p></p>
+	    <p><p><textarea id="others" cols="30" rows="5" maxlength="200" placeholder="Add a note for delivery"></textarea></p></p>
+	    <p><button type="submit">Order</button><input type="reset" id="rst"></p>
 	  </div>
 	</form>
       </div>

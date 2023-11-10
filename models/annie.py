@@ -14,17 +14,17 @@ class Annie(BaseModel, Base):
     """Representation of a Annie user """
     if models.storage_t == 'db':
         __tablename__ = 'annie_users'
-        email = Column(String(128), nullable=False)
-        password = Column(String(128), nullable=False)
-        first_name = Column(String(128), nullable=False)
-        last_name = Column(String(128), nullable=False)
-        phone = Column(String(128), nullable=False)
-        choice = Column(String(128), nullable=False)
-        state = Column(String(128), nullable=False)
-        city = Column(String(128), nullable=False)
-        street = Column(String(128), nullable=False)
-        link = Column(String(400), nullable=False)
-        others = Column(String(200), nullable=False)
+        email = Column(String(128), nullable=True)
+        password = Column(String(128), nullable=True)
+        first_name = Column(String(128), nullable=True)
+        last_name = Column(String(128), nullable=True)
+        phone = Column(String(128), nullable=True)
+        choice = Column(String(128), nullable=True)
+        state = Column(String(128), nullable=True)
+        city = Column(String(128), nullable=True)
+        street = Column(String(128), nullable=True)
+        link = Column(String(400), nullable=True)
+        others = Column(String(200), nullable=True)
 
     else:
         email = ""

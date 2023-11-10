@@ -24,6 +24,46 @@ def list_farm_user():
     return jsonify(lst)
 
 
+@app_views.route('/chekwasy_farm/2626632/all_enquiry', methods=['GET'], strict_slashes=False)
+def list_buildex_user():
+    """
+    list all farm user
+    """
+
+    lst = []
+    all_fm = storage.all(Buildex).values()
+
+    for dic in all_fm:
+        lst.append(dic.to_dict())
+    return jsonify(lst)
+
+@app_views.route('/chekwasy_solar/2626632/all_order', methods=['GET'], strict_slashes=False)
+def list_farm_user():
+    """
+    list all solar user
+    """
+
+    lst = []
+    all_fm = storage.all(Solar).values()
+
+    for dic in all_fm:
+        lst.append(dic.to_dict())
+    return jsonify(lst)
+
+@app_views.route('/annie_couture/2626632/all_order', methods=['GET'], strict_slashes=False)
+def list_annie_user():
+    """
+    list all farm user
+    """
+
+    lst = []
+    all_fm = storage.all(Annie).values()
+
+    for dic in all_fm:
+        lst.append(dic.to_dict())
+    return jsonify(lst)
+
+
 @app_views.route('/chekwasy_farm/order', methods=['POST'], strict_slashes=False)
 def post_farm_user():
     """
@@ -55,7 +95,7 @@ def post_buildex_user():
     data = request.get_json()
     instance = Buildex(**data)
     instance.save()
-    return make_respon.se(jsonify(instance.to_dict()), 201)
+    return make_response(jsonify(instance.to_dict()), 201)
 
 
 @app_views.route('/chekwasy_solar/order', methods=['POST'], strict_slashes=False)

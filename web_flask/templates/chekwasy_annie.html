@@ -26,24 +26,24 @@
 	  <p>already made for customers and also trending</p>
 	  <p>styles you could rock</p>
 	</div>
-	<form action="http://" + window.location.hostname + "/api/v1/annie_couture/order" id="chekwasy_annie_form" method="post">
+	<form id="chekwasy_annie_form" method="post">
 	  <h5>Place an order by filling the details below</h5>
 	  <h6>Account Number: 1224611018</h6>
 	  <h6>Account Name: Chekwasy Farm</h6>
 	  <h6>Bank Name: Zenith Bank</h6></h6>
 <div class="form_note"><p>Note: Minimum of half payment before processing</p></div>
 <div class="form_details">
-  <p>First name<p><input type="text" name="first_name" maxlength="40" required placeholder="Annie"></p></p>
-  <p>Last name<p><input type="text" name="last_name" maxlength="40" required placeholder="Chek"></p></p>
-  <p>Enter choice reference<p><input type="text" name="choice" maxlength="5" required placeholder="T01"></p></p>
-  <p>Phone number<p><input type="tel" name="phone" maxlength="11" required placeholder="08xxxxxxxx4"></p></p>
-  <p>Email<p><input type="email" name="email" maxlength="100" required placeholder="abc@chekwasy.tech"></p></p>
-  <p>State<p><input type="text" name="state" maxlength="30" required placeholder="Imo"></p></p>
-  <p>City (Eg. Surulere)<p><input type="text" name="city" maxlength="30" required placeholder="Owerri"></p></p>
-  <p>Street<p><input type="text" name="street" maxlength="200" required></p></p>
-  <p>Link to cloth choice<p><input type="url" name="link" placeholder="optional"></p></p>
-  <p><p><textarea name="others" cols="30" rows="5" placeholder="Add cloth measurement"></textarea></p></p>
-  <p><button id="annie_form_botton">Order</button></p>
+  <p>First name<p><input type="text" id="first_name" maxlength="40" required placeholder="Annie"></p></p>
+  <p>Last name<p><input type="text" id="last_name" maxlength="40" required placeholder="Chek"></p></p>
+  <p>Enter choice reference<p><input type="text" id="choice" maxlength="5" required placeholder="T01"></p></p>
+  <p>Phone number<p><input type="tel" id="phone" maxlength="11" required placeholder="08xxxxxxxx4"></p></p>
+  <p>Email<p><input type="email" id="email" maxlength="100" required placeholder="abc@chekwasy.tech"></p></p>
+  <p>State<p><input type="text" id="state" maxlength="30" required placeholder="Imo"></p></p>
+  <p>City (Eg. Surulere)<p><input type="text" id="city" maxlength="30" required placeholder="Owerri"></p></p>
+  <p>Street<p><input type="text" id="street" maxlength="200" required></p></p>
+  <p>Link to cloth choice<p><input type="url" id="link" placeholder="optional"></p></p>
+  <p><p><textarea id="others" cols="30" rows="5" placeholder="Add cloth measurement"></textarea></p></p>
+  <p><button type="submit">Order</button><input type="reset" id="rst"></p>
 </div>
 </form>
 </div>

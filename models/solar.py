@@ -14,16 +14,16 @@ class Solar(BaseModel, Base):
     """Representation of a Solar user """
     if models.storage_t == 'db':
         __tablename__ = 'solar_users'
-        email = Column(String(128), nullable=False)
-        password = Column(String(128), nullable=False)
-        first_name = Column(String(128), nullable=False)
-        last_name = Column(String(128), nullable=False)
-        phone = Column(String(128), nullable=False)
-        amount = Column(Integer, nullable=False, default=0)
-        state = Column(String(128), nullable=False)
-        city = Column(String(128), nullable=False)
-        street = Column(String(128), nullable=False)
-        others = Column(String(200), nullable=False)
+        email = Column(String(128), nullable=True)
+        password = Column(String(128), nullable=True)
+        first_name = Column(String(128), nullable=True)
+        last_name = Column(String(128), nullable=True)
+        phone = Column(String(128), nullable=True)
+        amount = Column(Integer, nullable=True, default=0)
+        state = Column(String(128), nullable=True)
+        city = Column(String(128), nullable=True)
+        street = Column(String(128), nullable=True)
+        others = Column(String(200), nullable=True)
 
     else:
         email = ""
