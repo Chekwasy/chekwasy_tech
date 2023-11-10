@@ -14,16 +14,16 @@ class Farm(BaseModel, Base):
     """Representation of a farm user """
     if models.storage_t == 'db':
         __tablename__ = 'farm_users'
-        email = Column(String(128), nullable=False)
-        password = Column(String(128), nullable=False)
-        first_name = Column(String(128), nullable=False)
-        last_name = Column(String(128), nullable=False)
-        phone = Column(String(128), nullable=False)
-        reference = Column(String(128), nullable=False)
-        state = Column(String(128), nullable=False)
-        city = Column(String(128), nullable=False)
-        street = Column(String(128), nullable=False)
-        order_qty = Column(Integer, nullable=False, default=0)
+        email = Column(String(128), nullable=True)
+        password = Column(String(128), nullable=True)
+        first_name = Column(String(128), nullable=True)
+        last_name = Column(String(128), nullable=True)
+        phone = Column(String(128), nullable=True)
+        reference = Column(String(128), nullable=True)
+        state = Column(String(128), nullable=True)
+        city = Column(String(128), nullable=True)
+        street = Column(String(128), nullable=True)
+        order_qty = Column(Integer, nullable=True, default=0)
 
     else:
         email = ""

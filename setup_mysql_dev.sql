@@ -1,5 +1,5 @@
 -- prepares a MySQL server for the project
-
+DROP DATABASE chekwasy_dev_db;
 CREATE DATABASE IF NOT EXISTS chekwasy_dev_db;
 CREATE USER IF NOT EXISTS 'chekwasy_dev'@'localhost' IDENTIFIED BY 'CHEKWASY_dev_pwd_001';
 GRANT ALL PRIVILEGES ON `chekwasy_dev_db`.* TO 'chekwasy_dev'@'localhost';
