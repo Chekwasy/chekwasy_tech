@@ -5,7 +5,7 @@ $( "#chekwasy_solar_form_botton" ).click(function () {
     event.preventDefault();
 
     // Get some values from elements on the page:
-    var $form = $( this );
+    var $form = $( '#chekwasy_solar_form' );
     first_name = $form.find( "input[name='first_name']" ).val();
     last_name = $form.find( "input[name='last_name']" ).val();
     amount = $form.find( "input[name='amount']" ).val();

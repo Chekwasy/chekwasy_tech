@@ -1,11 +1,11 @@
-$( "#chekwasy_annie_form_botton" ).click(function () {
+$( "#annie_form_botton" ).click(function () {
 
     const api = 'http://' + window.location.hostname;
     // Stop form from submitting normally
     event.preventDefault();
 
     // Get some values from elements on the page:
-    var $form = $( this );
+    var $form = $( '#chekwasy_annie_form' );
     first_name = $form.find( "input[name='first_name']" ).val();
     last_name = $form.find( "input[name='last_name']" ).val();
     choice = $form.find( "input[name='choice']" ).val();
