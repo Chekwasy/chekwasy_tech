@@ -4,10 +4,10 @@
   <head>
     <meta charset="utf-8">
     <title>Chekwasy Farm</title>
-    <link rel="stylesheet" type="text/css" href="../static/styles/common.css" />
-    <link rel="stylesheet" type="text/css" href="../static/styles/header.css" />
-    <link rel="stylesheet" type="text/css" href="../static/styles/footer.css" />
-    <link rel='shortcut icon' href="../static/images/icon.jpeg" />
+    <link rel="stylesheet" type="text/css" href="styles/common.css" />
+    <link rel="stylesheet" type="text/css" href="styles/header.css" />
+    <link rel="stylesheet" type="text/css" href="styles/footer.css" />
+    <link rel='shortcut icon' href="images/icon.jpeg" />
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   </head>
 
@@ -26,23 +26,23 @@
 	  <p>and to be delivered within 7 days</p>
 	  <p>Best for 3 months</p>
 	</div>
-	<form action="http://" + window.location.hostname + "/api/v1/chekwasy_farm/order" id="chekwasy_farm_form" method="post">
-	  <h5>Enter your details to make your order</h5>
+	<form id="chekwasy_farm_form" method="post">
+	  <h5>Fill in your information to place your order</h5>
 	  <h6>Account Number: 1224611018</h6>
 	  <h6>Account Name: Chekwasy Farm</h6>
 	  <h6>Bank Name: Zenith Bank</h6></h6>
-<div class="form_note"><p>Note: minimum order is 5 packs. If name of sender is different from name entered here, enter your name as reference</p></div>
+<div class="form_note"><p>Note: minimum order is 5 packs. <strong>5packs N25,000, 10packs N40,000</strong> If name of sender is different from name entered here, enter your name as reference</p></div>
 <div class="form_details">
-  <p>First name<p><input type="text" name="first_name" maxlength="40" placeholder="Richard" required></p></p>
-  <p>Last name<p><input type="text" name="last_name" maxlength="40" placeholder="Chekwas" required></p></p>
-  <p>Phone number<p><input type="tel" name="phone" maxlength="11" placeholder="08xxxxxxxx5" required></p></p>
-  <p>Email<p><input type="email" name="email" maxlength="100" placeholder="abc@chekwasy.tech" required></p></p>
-  <p>Reference<p><input type="text" name="reference" maxlength="80" placeholder="Wisdom Paul" required></p></p>
-  <p>State<p><input type="text" name="state" maxlength="30" placeholder="Lagos" required></p></p>
-  <p>City (Eg. Surulere)<p><input type="text" maxlength="30" name="city" placeholder="Surulere" required></p></p>
-  <p>Street<p><input type="text" maxlength="100" name="street"></p></p>
-  <p>Order Quantity<p><input type="number" min="5" max="100" name="order_qty" placeholder="10" required></p></p>
-  <p><button id="chekwasy_farm_form_botton">Order</button></p>
+  <p>First name<p><input type="text" id="first_name" maxlength="40" placeholder="Richard" required></p></p>
+  <p>Last name<p><input type="text" id="last_name" maxlength="40" placeholder="Chekwas" required></p></p>
+  <p>Phone number<p><input type="tel" id="phone" maxlength="11" placeholder="08xxxxxxxx5" required></p></p>
+  <p>Email<p><input type="email" id="email" maxlength="100" placeholder="abc@chekwasy.tech" required></p></p>
+  <p>Reference<p><input type="text" id="reference" maxlength="80" placeholder="Wisdom Paul" required></p></p>
+  <p>State<p><input type="text" id="state" maxlength="30" placeholder="Lagos" required></p></p>
+  <p>City (Eg. Surulere)<p><input type="text" maxlength="30" id="city" placeholder="Surulere" required></p></p>
+  <p>Street<p><input type="text" maxlength="100" id="street"></p></p>
+  <p>Order Quantity<p><input type="number" min="5" max="100" id="order_qty" placeholder="10" required></p></p>
+  <p><button type="submit">Order</button></p>
 </div>
 </form>
 </div>
@@ -58,7 +58,7 @@
   <p>Email: chekwasyfarm@gmail.com</p>
   <p>Copyright © 2023 Chekwasy All rights reserved</p>
 </footer>
-<script type="text/javascript" src="../static/scripts/chekwasy_farm_script.js"></script>
+<script type="text/javascript" src="scripts/chekwasy_farm_script.js"></script>
 </body>
 
 </html>
