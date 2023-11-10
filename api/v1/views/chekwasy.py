@@ -24,10 +24,10 @@ def list_farm_user():
     return jsonify(lst)
 
 
-@app_views.route('/chekwasy_farm/2626632/all_enquiry', methods=['GET'], strict_slashes=False)
+@app_views.route('/chekwasy_buildex/2626632/all_enquiry', methods=['GET'], strict_slashes=False)
 def list_buildex_user():
     """
-    list all farm user
+    list all buildex user
     """
 
     lst = []
@@ -37,8 +37,9 @@ def list_buildex_user():
         lst.append(dic.to_dict())
     return jsonify(lst)
 
+
 @app_views.route('/chekwasy_solar/2626632/all_order', methods=['GET'], strict_slashes=False)
-def list_farm_user():
+def list_solar_user():
     """
     list all solar user
     """
@@ -53,7 +54,7 @@ def list_farm_user():
 @app_views.route('/annie_couture/2626632/all_order', methods=['GET'], strict_slashes=False)
 def list_annie_user():
     """
-    list all farm user
+    list all annie user
     """
 
     lst = []
