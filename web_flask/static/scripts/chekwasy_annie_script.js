@@ -1,5 +1,6 @@
 $( "#chekwasy_annie_form" ).on( "submit", function( event ) {
 
+    const api = 'http://' + window.location.hostname;
     // Stop form from submitting normally
     event.preventDefault();
 
@@ -14,7 +15,15 @@ $( "#chekwasy_annie_form" ).on( "submit", function( event ) {
 	city = $form.find( "input[name='city']" ).val(),
 	street = $form.find( "input[name='street']" ).val(),
 	others = $form.find( "input[name='others']" ).val(),
-	url = $form.attr( "action" );
+
+    $.ajax({
+	url: api + ':5001/api/v1/places_search/',
+	type: 'POST',
+	data: '{}',
+	contentType: 'application/json',
+	dataType: 'json',
+	success: appendPlaces
+    });
 
     // Send the data using post
     var posting = $.post( url, { "first_name": first_name, "last_name": last_name, "choice": choice, "phone": phone, "email": email, "state": state, "city": city, "street": street, "others": others } );
