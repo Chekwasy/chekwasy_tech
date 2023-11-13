@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $( '#chekwasy_farm_form' ).on( "submit", function( event ) {
-	const api = 'http://' + "chekwasy.tech";
+	const api = 'https://' + "chekwasy.tech";
 	$.ajax({
 	    url: api + '/api/v1/chekwasy_farm/order',
 	    type: 'POST',
