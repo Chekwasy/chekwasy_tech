@@ -1,0 +1,7 @@
+pip3 install gunicorn
+
+
+tmux new-session -d 'gunicorn --bind 0.0.0.0:5001 api.v1.app:app'
+
+
+tmux new-session -d 'gunicorn --bind 0.0.0.0:5000 web_flask.0-hello_route:app'
