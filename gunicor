@@ -1,6 +1,58 @@
+#install gunicorn
 pip3 install gunicorn
 
+#make gunicorn start its self during any reboot for one port
+sudo nano /etc/systemd/system/chekwasy_tech.service
 
+#put these inside for one port i.e :5000
+[Unit]
+Description=Gunicorn instance to serve chekwasy sites
+After=network.target
+
+[Service]
+User=chekwasy
+Group=www-data
+WorkingDirectory=/home/chekwasy/chekwasy_tech/
+ExecStart=/home/chekwasy/chekwasy_tech/gunicorn --workers 4 --bind 0.0.0.0:5000 -m 007 web_flask.chekwasy:app
+#ExecStart=/home/chekwasy/chekwasy_tech/gunicorn --workers 4 --bind 0.0.0.0:5001 -m 007 api.v1.app:app
+
+
+[Install]
+WantedBy=multi-user.target
+
+#make gunicorn start its self during any reboot for one port
+sudo nano /etc/systemd/system/chekwasy_tech2.service
+
+#put these inside for one port i.e :5001
+[Unit]
+Description=Gunicorn instance to serve chekwasy sites
+After=network.target
+
+[Service]
+User=chekwasy
+Group=www-data
+WorkingDirectory=/home/chekwasy/chekwasy_tech/
+#ExecStart=/home/chekwasy/chekwasy_tech/gunicorn --workers 4 --bind 0.0.0.0:5000 -m 007 web_flask.chekwasy:app
+ExecStart=/home/chekwasy/chekwasy_tech/gunicorn --workers 4 --bind 0.0.0.0:5001 -m 007 api.v1.app:app
+
+
+[Install]
+WantedBy=multi-user.target
+
+#runn these after closing the file
+sudo systemctl start chekwasy_tech
+sudo systemctl enable chekwasy_tech
+sudo systemctl start chekwasy_tech2
+sudo systemctl enable chekwasy_tech2
+
+
+#reload incase of failed
+sudo systemctl daemon-reload
+
+#check the status
+systemctl status chekwasy_tech.service
+
+#start ordinary
 tmux new-session -d 'gunicorn --bind 0.0.0.0:5001 api.v1.app:app'
 
 
