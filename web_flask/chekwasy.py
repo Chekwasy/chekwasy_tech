@@ -22,7 +22,7 @@ def close_db(error):
 
 
 @app.before_request
-def filteringrequest():
+def filteringrequestv2():
     """function to filter out routes that dont need authentication"""
     farm_lock_paths = [
         '/farm_user/',
@@ -41,7 +41,7 @@ def filteringrequest():
         if (cooki is None):
             redirect('/farm_login')
         if cooki:
-            resp = requests.get("http://chekwasy.tech/api/v2/check/" + cooki)
+            resp = requests.get("http://chekwasy.tech/api/v2/farm_check/" + cooki)
             if resp.status_code != 200:
                 redirect('/farm_login')
 
