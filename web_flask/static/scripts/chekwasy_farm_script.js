@@ -30,7 +30,7 @@ $(document).ready(function() {
 		})
 
 		    .done(function(data) {
-			alert("Reset Token Generated and sent to your mail.\n Enter the token with your new password");
+			alert("Reset Token Generated and sent to your mail. Enter the token with your new password");
 			window.location.href = "/farm_tk";
 		    })
 		    .fail(function() {
@@ -56,11 +56,11 @@ $(document).ready(function() {
 			})
 
 			    .done(function(data) {
-				alert("Reset Token Generated and sent to your mail.\n Enter the token with your new password");
+				alert("Reset Token Generated and sent to your mail. Enter the token with your new password");
 				window.location.href = "/farm_tk";
 			    })
 			    .fail(function() {
-			    	alert("An Error Occurred. \n Please Cross Check Your Response")
+			    	alert("An Error Occurred. Please Cross Check Your Response")
 			    });
 			event.preventDefault();
 		}
@@ -105,7 +105,7 @@ $(document).ready(function() {
 				window.location.href = "/farm_login";
 			    })
 			    .fail(function() {
-			    	alert("An Error Occurred. \n Please Cross Check Your Response")
+			    	alert("An Error Occurred. Please Cross Check Your Response")
 			    });
 			event.preventDefault();
 		}
@@ -186,4 +186,4 @@ $(document).ready(function() {
 		    });
 		event.preventDefault();
     });
-};
+});
