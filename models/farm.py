@@ -24,7 +24,7 @@ class Farm(BaseModel, Base):
         city = Column(String(128), nullable=True)
         order_qty = Column(Integer, nullable=True, default=0)
         hashed_password = Column(String(250), nullable=False)
-        session_id = Column(String(250), nullable=True)
+        farm_session_id = Column(String(250), nullable=True)
         session_created_at = Column(DateTime, default=datetime.utcnow)
         reset_token = Column(String(250), nullable=True)
 
