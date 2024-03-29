@@ -194,6 +194,7 @@ def farm_update_profile() -> str:
     usr_dt = request.get_json()
     if not usr_dt:
         abort(404)
+    from api.v2.app import AUTH
     first_name = usr_dt.get("first_name")
     last_name = usr_dt.get("last_name")
     phone = usr_dt.get("phone")
