@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $( '#Login' ).on( "submit", function( event ) {
-		const api = 'https://' + "chekwasy.tech";
+		const api = 'http://' + "chekwasy.tech";
 		$.ajax({
 		    url: api + '/api/v2/farm_sessions',
 		    type: 'POST',
@@ -20,7 +20,7 @@ $(document).ready(function() {
 	});
 
     $( '#GenTokenPwd' ).on( "submit", function( event ) {
-		const api = 'https://' + "chekwasy.tech";
+		const api = 'http://' + "chekwasy.tech";
 		$.ajax({
 		    url: api + '/api/v2/farm_reset_password',
 		    type: 'POST',
@@ -40,7 +40,7 @@ $(document).ready(function() {
     });
 
     $( '#Reset_pwd' ).on( "submit", function( event ) {
-		const api = 'https://' + "chekwasy.tech";
+		const api = 'http://' + "chekwasy.tech";
 		const n1 = $('#Password1').val();
 		const n2 = $('#Password2').val();
 		if (n1 !== n2) {
@@ -67,7 +67,7 @@ $(document).ready(function() {
 	});
 	let zzz = '';
     $( "#RegisterCheck" ).on( "click", function() {
-		const api = 'https://' + "chekwasy.tech";
+		const api = 'http://' + "chekwasy.tech";
 		$.ajax({
 		    url: api + '/api/v2/farm_verify',
 		    type: 'GET',
@@ -84,7 +84,7 @@ $(document).ready(function() {
 		    });
 	});
 	$( '#Register' ).on( "submit", function( event ) {
-		const api = 'https://' + "chekwasy.tech";
+		const api = 'http://' + "chekwasy.tech";
 		const n1 = $('#password').val();
 		const n2 = $('#password2').val();
 		tok = $('#token').val();
@@ -111,7 +111,7 @@ $(document).ready(function() {
 		}
 	});
 	$( '#Farm_order' ).on( "submit", function( event ) {
-		const api = 'https://' + "chekwasy.tech";
+		const api = 'http://' + "chekwasy.tech";
 		$.ajax({
 		    url: api + '/api/v2/farm_order',
 		    type: 'POST',
@@ -130,7 +130,7 @@ $(document).ready(function() {
 		event.preventDefault();
     });
     $( "#Logout" ).on( "click", function() {
-		const api = 'https://' + "chekwasy.tech";
+		const api = 'http://' + "chekwasy.tech";
 		$.ajax({
 		    url: api + '/api/v2/farm_sessions',
 		    type: 'DELETE',
@@ -149,7 +149,7 @@ $(document).ready(function() {
 		    });
 	});
 	if (window.location.pathname === '/farm_profile') {
-		const api = 'https://' + "chekwasy.tech";
+		const api = 'http://' + "chekwasy.tech";
 		$.ajax({
 		    url: api + '/api/v2/farm_profile',
 		    type: 'GET',
@@ -166,7 +166,7 @@ $(document).ready(function() {
 		    });
 	};
 	$( '#Farm_update' ).on( "submit", function( event ) {
-		const api = 'https://' + "chekwasy.tech";
+		const api = 'http://' + "chekwasy.tech";
 		const s = document.getElementById('state');
 		const stat = s.options[s.selectedIndex].text;
 		$.ajax({
