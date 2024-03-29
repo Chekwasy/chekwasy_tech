@@ -174,7 +174,7 @@ def farm_order() -> str:
     note = data.get("note")
     from api.v2.app import mail
 
-    log = jsonify({"user_id": usr.id, "order_qty": order_qty, "note": note})
+    log = {"user_id": usr.id, "order_qty": order_qty, "note": note}
 
     order = Farm_order(**log)
     order.save()
