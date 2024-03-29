@@ -13,8 +13,8 @@ $(document).ready(function() {
 			alert("You are now logged in");
 			let expirationDate = new Date();
       		expirationDate.setDate(expirationDate.getDate() + 7); // Expires in 7 days
-      		document.cookie =
-            farm_session_id=${data.sess}; expires= + expirationDate.toUTCString();
+      		document.cookie = 
+      		`farm_session_id=${data.sess}; expires=` + expirationDate.toUTCString();
       		window.location.href = "/farm_user";
 		    })
 		    .fail(function() {
