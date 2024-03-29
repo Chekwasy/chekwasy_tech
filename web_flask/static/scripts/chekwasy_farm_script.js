@@ -82,6 +82,7 @@ $(document).ready(function() {
 		    .fail(function() {
 		    	alert("Invalid Email");
 		    });
+		event.preventDefault();
 	});
 	$( '#Register' ).on( "submit", function( event ) {
 		const api = 'http://' + "chekwasy.tech";
