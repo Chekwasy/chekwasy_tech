@@ -69,7 +69,7 @@ class Auth:
 
     def get_farm_user_from_session_id(self, farm_session_id: str) -> Farm:
         """return a farm user based on a session_id"""
-        if session_id is None:
+        if farm_session_id is None:
             return None
         try:
             usr = self._db.find_farm_user_by(farm_session_id=farm_session_id)
