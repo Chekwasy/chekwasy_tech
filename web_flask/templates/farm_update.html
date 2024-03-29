@@ -12,7 +12,7 @@
 
 {% block template %}
   <div class="d-flex flex-column mb-3 p-3">
-    <form class="row g-3">
+    <form class="row g-3" id="Farm_update" method="put">
       <div class="col-md-6">
         <label for="first_name" class="form-label">First Name</label>
         <input type="text" id="first_name" class="form-control">
@@ -45,7 +45,7 @@
         </div>
       </div>
       <div class="col-12">
-        <button type="submit" id="Farm_update" class="btn btn-primary">Update</button>
+        <button type="submit" class="btn btn-primary">Update</button>
       </div>
     </form>
   </div>

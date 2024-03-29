@@ -12,7 +12,7 @@
 
 {% block template %}
   <div class="d-flex align-items-center justify-content-center py-4 bg-body-tertiary">
-    <form>
+    <form id="Farm_order" method="post">
       <h1 class="h3 mb-3 fw-normal">Enter Order Information</h1>
 
       <div class="form-floating">
@@ -24,7 +24,7 @@
         <label for="note">Note For Delivery</label>
       </div>
 
-      <button class="btn btn-primary w-100 py-2" id="Farm_order" type="submit">Order</button>
+      <button class="btn btn-primary w-100 py-2" type="submit">Order</button>
     </form>
   </div>
 {% endblock template %}

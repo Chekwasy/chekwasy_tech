@@ -212,11 +212,8 @@ def farm_update_profile() -> str:
     'GET'], strict_slashes=False)
 def farm_verify() -> str:
     """method to check user valid email for farm"""
-    usr_dt = request.get_json()
-    if not usr_dt:
-        abort(404)
     from api.v2.app import mail
-    email = usr_dt.get("email")
+    email = request.form.get("email")
     num = random.randint(103737, 998789)
     msg = Message('Chekwasy Farm. Email Verify Token', sender='chekwasybuildex@gmail.com', recipients=[email])
     msg.body = f"Enter The Token Below To Comfirm Your Email Address\n {num}"

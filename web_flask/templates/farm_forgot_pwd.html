@@ -14,7 +14,7 @@
 
 {% block template %}
   <div class="d-flex align-items-center justify-content-center py-4 bg-body-tertiary">
-    <form>
+    <form id="GenTokenPwd" method="post">
       <h1 class="h3 mb-3 fw-normal">Generate Token</h1>
 
       <div class="form-floating">
@@ -22,7 +22,7 @@
         <label for="email">Email address</label>
       </div>
 
-      <button class="btn btn-primary w-100 py-2" id="GenTokenPwd" type="submit">Generate Token</button>
+      <button class="btn btn-primary w-100 py-2" type="submit">Generate Token</button>
     </form>
   </div>
 {% endblock template %}
