@@ -34,6 +34,15 @@ class DBStorage:
         CHEKWASY_MYSQL_HOST = getenv('CHEKWASY_MYSQL_HOST')
         CHEKWASY_MYSQL_DB = getenv('CHEKWASY_MYSQL_DB')
         CHEKWASY_ENV = getenv('CHEKWASY_ENV')
+        sess_dur = getenv("SESSION_DURATION")
+        if sess_dur is None:
+            self.session_duration = 0
+        else:
+            try:
+                sess_val = int(sess_dur)
+                self.session_duration = sess_val
+            except Exception:
+                self.session_duration = 0
         self.__engine = create_engine('mysql+mysqldb://{}:{}@{}/{}'.
                                       format(CHEKWASY_MYSQL_USER,
                                              CHEKWASY_MYSQL_PWD,
