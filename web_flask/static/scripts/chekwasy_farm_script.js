@@ -92,7 +92,6 @@ $(document).ready(function() {
 		const api = 'http://' + "chekwasy.tech";
 		const n1 = $('#password').val();
 		const n2 = $('#password2').val();
-		tok = $('#token').val();
 		if (n1 !== n2) {
 			alert("Password Didnt Match");
 		}
@@ -106,8 +105,8 @@ $(document).ready(function() {
 			})
 
 			    .done(function(data) {
-				alert(`Farm User Account Created Sucessfully ${data.email} \n You Can Now Login`);
-				window.location.href = "/farm_login";
+					alert(`Farm User Account Created Sucessfully ${data.email} \n You Can Now Login`);
+					window.location.href = "/farm_login";
 			    })
 			    .fail(function() {
 			    	alert("An Error Occurred. Please Cross Check Your Response")

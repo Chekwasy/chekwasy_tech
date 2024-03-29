@@ -38,7 +38,7 @@ class Farm(BaseModel, Base):
         city = ""
         order_qty = 0
         hashed_password = ""
-        session_id = ""
+        farm_session_id = ""
         reset_token = ""
 
 
