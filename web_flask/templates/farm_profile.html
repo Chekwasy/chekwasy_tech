@@ -1,0 +1,31 @@
+{% extends "farm_base.html" %}
+
+{% block title %}Chekwasy Farm{% endblock title %}
+
+{% block hm_page %}<a class="nav-link" href="farm">Home</a>{% endblock hm_page %}
+
+{% block p_page %}<a class="nav-link active" href="farm_profile">Profile</a>{% endblock p_page %}
+
+{% block o_page %}<a class="nav-link" href="farm_order">Order</a>{% endblock o_page %}
+
+{% block l_page %}<button class="nav-link" id="Logout">Logout</button>{% endblock l_page %}
+
+
+{% block template %}
+  <div class="d-flex flex-column align-items-left justify-content-left py-4 bg-body-tertiary">
+    <div class="d-flex flex-column mb-3 w-25 p-3">
+      <div class="p-2" id="f_name">Full Name </div>
+      <div class="p-2" id="Email">Email </div>
+      <div class="p-2" id="Phone">Phone Number</div>
+      <div class="p-2" id="Address">Address </div>
+      <div class="d-flex align-items-left justify-content-left py-4 bg-body-tertiary">
+        <div class="column">
+          <button type="button" class="btn btn-primary" id="Logout" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Logout
+          </button>
+          <a class="btn btn-primary" href="farm_update" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"> Update Profile
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock template %}

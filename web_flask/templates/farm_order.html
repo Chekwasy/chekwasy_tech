@@ -1,0 +1,30 @@
+{% extends "farm_base.html" %}
+
+{% block title %}Chekwasy Farm{% endblock title %}
+
+{% block hm_page %}<a class="nav-link" href="farm">Home</a>{% endblock hm_page %}
+
+{% block p_page %}<a class="nav-link" href="farm_profile">Profile</a>{% endblock p_page %}
+
+{% block o_page %}<a class="nav-link active" href="farm_order">Order</a>{% endblock o_page %}
+
+{% block l_page %}<button class="nav-link" id="Logout">Logout</button>{% endblock l_page %}
+
+{% block template %}
+  <div class="d-flex align-items-center justify-content-center py-4 bg-body-tertiary">
+    <form>
+      <h1 class="h3 mb-3 fw-normal">Enter Order Information</h1>
+
+      <div class="form-floating">
+        <input type="number" min="10" max="100" class="form-control" id="qty" placeholder="Number of Packs">
+        <label for="qty">Number of Packs</label>
+      </div>
+      <div class="form-floating">
+        <input type="text" class="form-control" id="note" placeholder="Note For Delivery">
+        <label for="note">Note For Delivery</label>
+      </div>
+
+      <button class="btn btn-primary w-100 py-2" id="Farm_order" type="submit">Order</button>
+    </form>
+  </div>
+{% endblock template %}

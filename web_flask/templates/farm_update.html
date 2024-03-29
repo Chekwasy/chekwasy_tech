@@ -1,0 +1,52 @@
+{% extends "farm_base.html" %}
+
+{% block title %}Chekwasy Farm{% endblock title %}
+
+{% block hm_page %}<a class="nav-link" href="farm">Home</a>{% endblock hm_page %}
+
+{% block p_page %}<a class="nav-link active" href="farm_profile">Profile</a>{% endblock p_page %}
+
+{% block o_page %}<a class="nav-link" href="farm_order">Order</a>{% endblock o_page %}
+
+{% block l_page %}<button class="nav-link" id="Logout">Logout</button>{% endblock l_page %}
+
+{% block template %}
+  <div class="d-flex flex-column mb-3 p-3">
+    <form class="row g-3">
+      <div class="col-md-6">
+        <label for="first_name" class="form-label">First Name</label>
+        <input type="text" id="first_name" class="form-control">
+      </div>
+      <div class="col-md-6">
+        <label for="last_name" class="form-label">Last Name</label>
+        <input type="text" id="last_name" class="form-control">
+      </div>
+      <div class="col-12">
+        <label for="address" class="form-label">Address</label>
+        <input type="text" id="address" class="form-control" placeholder="1234 Main St">
+      </div>
+      <div class="col-md-6">
+        <label for="city" class="form-label">City</label>
+        <input type="text" id="city" class="form-control">
+      </div>
+      <div class="col-md-4">
+        <label for="state" class="form-label">State</label>
+        <select class="form-select" id="state">
+          <option selected>Lagos</option>
+          <option>Ogun</option>
+        </select>
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            Agree with terms & conditions
+          </label>
+        </div>
+      </div>
+      <div class="col-12">
+        <button type="submit" id="Farm_update" class="btn btn-primary">Update</button>
+      </div>
+    </form>
+  </div>
+{% endblock template %}

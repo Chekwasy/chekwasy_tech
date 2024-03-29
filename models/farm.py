@@ -1,11 +1,12 @@
 #!/usr/bin/python3
 """ holds class farm"""
 
+from datetime import datetime
 import models
 from models.base_model import BaseModel, Base
 from os import getenv
 import sqlalchemy
-from sqlalchemy import Column, String, Integer
+from sqlalchemy import Column, String, Integer, DateTime
 from sqlalchemy.orm import relationship
 from hashlib import md5
 
@@ -15,34 +16,32 @@ class Farm(BaseModel, Base):
     if models.storage_t == 'db':
         __tablename__ = 'farm_users'
         email = Column(String(128), nullable=True)
-        password = Column(String(128), nullable=True)
         first_name = Column(String(128), nullable=True)
         last_name = Column(String(128), nullable=True)
         phone = Column(String(128), nullable=True)
-        reference = Column(String(128), nullable=True)
+        street = Column(String(300), nullable=True)
         state = Column(String(128), nullable=True)
         city = Column(String(128), nullable=True)
-        street = Column(String(128), nullable=True)
         order_qty = Column(Integer, nullable=True, default=0)
+        hashed_password = Column(String(250), nullable=False)
+        session_id = Column(String(250), nullable=True)
+        session_created_at = Column(DateTime, default=datetime.utcnow)
+        reset_token = Column(String(250), nullable=True)
 
     else:
         email = ""
-        password = ""
         first_name = ""
         last_name = ""
         phone = ""
-        reference = ""
+        street = ""
         state = ""
         city = ""
-        street = ""
         order_qty = 0
+        hashed_password = ""
+        session_id = ""
+        reset_token = ""
+
 
     def __init__(self, *args, **kwargs):
         """initializes farm user"""
         super().__init__(*args, **kwargs)
-
-    def __setattr__(self, name, value):
-        """sets a password with md5 encryption"""
-        if name == "password":
-            value = md5(value.encode()).hexdigest()
-        super().__setattr__(name, value)

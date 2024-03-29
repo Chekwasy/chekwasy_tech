@@ -1,0 +1,41 @@
+{% extends "farm_base.html" %}
+
+{% block title %}Chekwasy Farm{% endblock title %}
+
+{% block hm_page %}<a class="nav-link" href="farm">Home</a>{% endblock hm_page %}
+
+{% block p_page %}<a class="nav-link" href="farm_profile">Profile</a>{% endblock p_page %}
+
+{% block o_page %}<a class="nav-link" href="farm_order">Order</a>{% endblock o_page %}
+
+{% block l_page %}<a class="nav-link" href="farm_login">Login</a>{% endblock l_page %}
+
+{% block r_page %}<a class="nav-link active" href="farm_register">Register</a>{% endblock r_page %}
+
+{% block template %}
+  <div class="d-flex align-items-center justify-content-center py-4 bg-body-tertiary">
+    <form>
+      <h1 class="h3 mb-3 fw-normal">Create An Account</h1>
+
+      <div class="form-floating">
+        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+        <label for="email">Email address</label>
+      </div>
+      <button class="btn btn-primary w-100 py-2" id="RegisterCheck">Verify Email</button>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="password" placeholder="Password">
+        <label for="password">Password</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="password2" placeholder="Re-enter Password">
+        <label for="password2">Re-enter Password</label>
+      </div>
+      <div class="form-floating">
+        <input type="text" class="form-control" id="token" placeholder="Token Recieved">
+        <label for="token">Token Recieved</label>
+      </div>
+
+      <button class="btn btn-primary w-100 py-2" id="Register" type="submit">Register</button>
+    </form>
+  </div>
+{% endblock template %}

@@ -4,5 +4,5 @@ export TP_MYSQL_HOST=localhost
 export TP_MYSQL_DB=bincomphptest
 export TP_TYPE_STORAGE=db
 export TP_API_PORT=5001
-export SESSION=session_id
+export FARM_SESSION=farm_session_id
 export SESSION_DURATION=60
