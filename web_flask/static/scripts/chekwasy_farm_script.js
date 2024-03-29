@@ -89,14 +89,14 @@ $(document).ready(function() {
 		const n1 = $('#password').val();
 		const n2 = $('#password2').val();
 		tok = $('#token').val();
-		if ((n1 !== n2) || (zzz !== tok)) {
-			alert("Incorrect Token");
+		if (n1 !== n2) {
+			alert("Password Didnt Match");
 		}
 		else {
 			$.ajax({
 			    url: api + '/api/v2/farm_users',
 			    type: 'POST',
-			    data: JSON.stringify({email: $('#email').val(), reset_token: $('#token').val(), new_password: n2}),
+			    data: JSON.stringify({email: $('#email').val(), password: n2}),
 			    contentType: 'application/json',
 			    dataType: 'json'
 			})
