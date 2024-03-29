@@ -11,7 +11,11 @@ $(document).ready(function() {
 
 		    .done(function(data) {
 			alert("You are now logged in");
-			window.location.href = "/farm_user";
+			let expirationDate = new Date();
+      		expirationDate.setDate(expirationDate.getDate() + 7); // Expires in 7 days
+      		document.cookie =
+            farm_session_id=${data.sess}; expires= + expirationDate.toUTCString();
+      		window.location.href = "/farm_user";
 		    })
 		    .fail(function() {
 		    	alert("An Error Occurred. Try Again");
