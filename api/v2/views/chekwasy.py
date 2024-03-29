@@ -10,7 +10,7 @@ from flask import abort, jsonify, make_response, request
 
 
 @app_views.route('/chekwasy_buildex/2626632/all_enquiry', methods=['GET'], strict_slashes=False)
-def list_buildex_user():
+def list_buildex_userv2():
     """
     list all buildex user
     """
@@ -24,7 +24,7 @@ def list_buildex_user():
 
 
 @app_views.route('/chekwasy_solar/2626632/all_order', methods=['GET'], strict_slashes=False)
-def list_solar_user():
+def list_solar_userv2():
     """
     list all solar user
     """
@@ -37,7 +37,7 @@ def list_solar_user():
     return jsonify(lst)
 
 @app_views.route('/annie_couture/2626632/all_order', methods=['GET'], strict_slashes=False)
-def list_annie_user():
+def list_annie_userv2():
     """
     list all annie user
     """
@@ -50,7 +50,7 @@ def list_annie_user():
     return jsonify(lst)
 
 @app_views.route('/chekwasy_buildex/enquiry', methods=['POST'], strict_slashes=False)
-def post_buildex_user():
+def post_buildex_userv2():
     """
     Creates a buildex user
     """
@@ -67,7 +67,7 @@ def post_buildex_user():
 
 
 @app_views.route('/chekwasy_solar/order', methods=['POST'], strict_slashes=False)
-def post_solar_user():
+def post_solar_userv2():
     """
     Creates a Solar user
     """
@@ -84,7 +84,7 @@ def post_solar_user():
 
 
 @app_views.route('/annie_couture/order', methods=['POST'], strict_slashes=False)
-def post_annie_user():
+def post_annie_userv2():
     """
     Creates a Annie user
     """

@@ -12,7 +12,7 @@ import random
 
 @app_views.route('/farm_users', methods=[
     'POST'], strict_slashes=False)
-def reg_farm_user() -> str:
+def reg_farm_userv2() -> str:
     """register a farm user to the server"""
     data = request.get_json()
     if not data:
@@ -31,7 +31,7 @@ def reg_farm_user() -> str:
 
 @app_views.route('/farm_sessions', methods=[
     'POST'], strict_slashes=False)
-def farm_login() -> str:
+def farm_loginv2() -> str:
     """method to comfirm farm logged in"""
     data = request.get_json()
     if not data:
@@ -50,7 +50,7 @@ def farm_login() -> str:
 
 @app_views.route('/farm_sessions', methods=[
     'DELETE'], strict_slashes=False)
-def farm_logout():
+def farm_logoutv2():
     """method to delete farm session. same as logout"""
     cooki = request.cookies.get("farm_session_id")
     if cooki is None:
@@ -61,21 +61,6 @@ def farm_logout():
         return jsonify([])
     AUTH.destroy_farm_session(usr.id)
     return jsonify([])
-    
-
-
-@app_views.route('/farm_profile', methods=[
-    'GET'], strict_slashes=False)
-def farm_profile() -> str:
-    """method to get farm user profile details by session_id"""
-    cooki = request.cookies.get("farm_session_id")
-    if cooki is None:
-        abort(403)
-    from api.v2.app import AUTH
-    usr = AUTH.get_farm_user_from_session_id(cooki)
-    if usr is None:
-        abort(403)
-    return jsonify({"email": usr.email}), 200
 
 
 @app_views.route('/farm_check/<sess>', methods=[
