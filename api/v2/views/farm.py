@@ -172,6 +172,7 @@ def farm_order() -> str:
         abort(404)
     order_qty = data.get("order_qty")
     note = data.get("note")
+    from api.v2.app import mail
 
     log = jsonify({"user_id": usr.id, "order_qty": order_qty, "note": note})
 
@@ -214,6 +215,7 @@ def farm_verify() -> str:
     usr_dt = request.get_json()
     if not usr_dt:
         abort(404)
+    from api.v2.app import mail
     email = usr_dt.get("email")
     num = random.randint(103737, 998789)
     msg = Message('Chekwasy Farm. Email Verify Token', sender='chekwasybuildex@gmail.com', recipients=[email])
