@@ -1,8 +1,9 @@
-export TP_MYSQL_USER=hbnb_dev
-export TP_MYSQL_PWD=hbnb_dev_pwd
-export TP_MYSQL_HOST=localhost
-export TP_MYSQL_DB=bincomphptest
-export TP_TYPE_STORAGE=db
-export TP_API_PORT=5001
-export FARM_SESSION=farm_session_id
-export SESSION_DURATION=60
+export CHEKWASY_MYSQL_USER=chekwasy_dev
+export CHEKWASY_MYSQL_PWD=CHEKWASY_dev_pwd_001
+export CHEKWASY_MYSQL_HOST=localhost
+export CHEKWASY_MYSQL_DB=chekwasy_dev_db
+export CHEKWASY_TYPE_STORAGE=db
+export CHEKWASY_API_HOST=0.0.0.0 
+export CHEKWASY_API_PORT=5001
+export FARM_SESSION_NAME=farm_session_id 
+export SESSION_DURATION=100
