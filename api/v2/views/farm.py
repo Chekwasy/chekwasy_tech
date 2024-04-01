@@ -72,7 +72,7 @@ def check(sess) -> str:
     from api.v2.app import AUTH
     usr = AUTH.get_farm_user_from_session_id(sess)
     if usr is None:
-        abort(403)
+        abort(404)
     return jsonify({"email": usr.email}), 200
 
 
@@ -127,7 +127,7 @@ def farm_profile() -> str:
     if usr is None:
         abort(403)
     info = usr.to_dict()
-    return jsonify({"first_name": info.get("first_name"), "last_name": info.get("last_name"), "email": info.get("email"), "phone": info.get("phone"), "Address": info.get("street") + " " + info.get("city") + " " + info.get("state")}), 201
+    return jsonify({"first_name": info.get("first_name"), "last_name": info.get("last_name"), "email": info.get("email"), "phone": info.get("phone"), "address": info.get("street") + " " + info.get("city") + " " + info.get("state")}), 201
 
 
 @app_views.route('/farm_order', methods=[

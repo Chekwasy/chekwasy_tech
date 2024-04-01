@@ -39,7 +39,7 @@ def filteringrequest():
     excluded_paths = [
         '/api/v2/unauthorized/',
         '/api/v2/forbidden/',
-        '/api/v2/reset_password/',
+        '/api/v2/farm_reset_password/',
         '/api/v2/farm_users/',
         '/api/v2/farm_sessions/',
         '/api/v2/farm_verify/',

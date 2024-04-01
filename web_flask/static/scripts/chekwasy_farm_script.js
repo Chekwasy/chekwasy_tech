@@ -18,7 +18,7 @@ $(document).ready(function() {
       		window.location.href = "/farm_user";
 		    })
 		    .fail(function() {
-		    	alert("An Error Occurred. Try Again");
+		    	alert("Invalid Email or Password");
 		    });
 		event.preventDefault();
 	});
@@ -60,8 +60,8 @@ $(document).ready(function() {
 			})
 
 			    .done(function(data) {
-				alert("Reset Token Generated and sent to your mail. Enter the token with your new password");
-				window.location.href = "/farm_tk";
+				alert("Password Changed. You can now login with new password");
+				window.location.href = "/farm_login";
 			    })
 			    .fail(function() {
 			    	alert("An Error Occurred. Please Cross Check Your Response")
@@ -166,9 +166,28 @@ $(document).ready(function() {
 				document.getElementById("f_name").innerHTML = `Full Name: ${data.first_name} ${data.last_name}`;
 				document.getElementById("Email").innerHTML = `Email: ${data.email}`;
 				document.getElementById("Phone").innerHTML = `Phone: ${data.phone}`;
-				document.getElementById("Address").innerHTML = `Address: ${data.street}, ${data.city}, ${data.state}.`;
+				document.getElementById("Address").innerHTML = `Address: ${data.address}.`;
 		    });
 	};
+	$( "#Logout2" ).on( "click", function() {
+                const api = 'http://' + "chekwasy.tech";
+                $.ajax({
+                    url: api + '/api/v2/farm_sessions',
+                    type: 'DELETE',
+                    data: JSON.stringify({}),
+                    contentType: 'application/json',
+                    dataType: 'json'
+                })
+
+                    .done(function(data) {
+                                alert("Logged Out");
+                                window.location.href = "/farm_login";
+                    })
+                    .fail(function() {
+                        alert("Session Expired");
+                        window.location.href = "/farm_login";
+                    });
+        });
 	$( '#Farm_update' ).on( "submit", function( event ) {
 		const api = 'http://' + "chekwasy.tech";
 		const s = document.getElementById('state');
@@ -176,7 +195,7 @@ $(document).ready(function() {
 		$.ajax({
 		    url: api + '/api/v2/farm_profile',
 		    type: 'PUT',
-		    data: JSON.stringify({first_name: $('#first_name').val(), last_name: $('#last_name').val(), street: $('#address').val(), city: $('#city').val(), state: stat}),
+		    data: JSON.stringify({first_name: $('#first_name').val(), last_name: $('#last_name').val(), phone: $('#phone').val(), street: $('#address').val(), city: $('#city').val(), state: stat}),
 		    contentType: 'application/json',
 		    dataType: 'json'
 		})

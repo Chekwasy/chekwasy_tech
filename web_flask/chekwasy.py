@@ -22,7 +22,7 @@ def close_db(error):
 
 
 @app.before_request
-def filteringrequestv2():
+def filteringrequest():
     """function to filter out routes that dont need authentication"""
     farm_lock_paths = [
         '/farm_user/',
@@ -32,7 +32,7 @@ def filteringrequestv2():
         '/farm_order/',
         '/farm_order',
         '/farm_update/',
-        '/farm_update'
+        '/farm_update',
     ]
 
     if (request.path in farm_lock_paths):
