@@ -1,0 +1,464 @@
+.container {
+    display: flexbox;
+    flex-direction: column;
+    width: 100vw;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.nav {
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(48, 185, 30);
+}
+.main {
+    width: 100vw;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+}
+
+/* nav_css */
+.h_logo {
+    display: flexbox;
+    width: 22vw;
+    height: 12vh;
+    background-image: url("static/images/suru2.png");
+    background-repeat: no-repeat;
+    background-size: 20vw 14vh;
+}
+.welcome {
+    display: flex;
+    width: 53vw;
+    height: 12vh;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.menu {
+    display: flex;
+    width: 25vw;
+    height: 12vh;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.greet {
+    width: 40vw;
+    height: 11vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hand_logo {
+    display: flex;
+    width: 4vw;
+    height: 4vw;
+    display: flex;
+    flex-direction: column;
+    background-image: url('static/images/hand.png');
+    background-repeat: no-repeat;
+    background-size: 4vw 4vw;
+    align-items: center;
+    justify-content: center;
+}
+.hand_text {
+    display: flex;
+    width: 40vw;
+    height: 4vh;
+    font-size: 3vh;
+}
+.productive_text {
+    font-size: 2.5vh;
+    width: 40vw;
+    height: 3vh;
+    display: flex;
+}
+.white_text {
+    color: white;
+}
+.bell {
+    width: 3vw;
+    height: 5vh;
+    align-items: center;
+    justify-content: center;
+}
+.profile_photo {
+    width: 4vw;
+    height: 5vh;
+    justify-content: center;
+    align-items: center;
+}
+.user {
+    width: 9vw;
+    height: 5vh;
+    display: flex;
+    flex-direction: column;
+}
+.bell_logo {
+    width: 5vw;
+    height: 6vh;
+    background-image: url('static/images/bell.png');
+    background-repeat: no-repeat;
+    background-size: 5vw 6vh;
+}
+.profile_pic {
+    width: 5vw;
+    height: 7vh;
+    background-image: url('static/images/profile.jpeg');
+    background-repeat: no-repeat;
+    background-size: 5vw 7vh;
+    border-radius: 50%;
+}
+.admin{
+    font-size: xx-small;
+    padding-top: 0.5vh;
+}
+
+/* nav ends */
+/* main begins */
+.sidebar {
+    width: 19vw;
+    height: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Main {
+    width: 81vw;
+    height: 1100px;
+    background-color: rgb(221, 218, 218);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+/* main ends */
+/* sidebar begins */
+.side_menu {
+    width: 19vw;
+    height: 1050px;
+}
+.side_menu2 {
+    width: 16vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.logout {
+    width: 19vw;
+    height: 50px;
+}
+.side_setting {
+    width: 15vw;
+    height: 3vh;
+    display: flex;
+    flex-direction: row;
+    font-size: 2.5vh;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.dash_logo {
+    width: 2vw;
+    height: 3vh;
+    background-image: url('static/images/dashboard.png');
+    background-repeat: no-repeat;
+    background-size: 2vw 3vh;
+    padding-right: 1vw;
+}
+.dash_text {
+    width: 10vw;
+}
+.order_logo {
+    width: 2vw;
+    height: 3vh;
+    background-image: url('static/images/order.png');
+    background-repeat: no-repeat;
+    background-size: 2vw 3vh;
+}
+.product_logo {
+    width: 2vw;
+    height: 3vh;
+    background-image: url('static/images/product.png');
+    background-repeat: no-repeat;
+    background-size: 2vw 3vh;
+}
+.logout_logo {
+    width: 4vw;
+    height: 3vh;
+    background-image: url('static/images/logout.png');
+    background-repeat: no-repeat;
+    background-size: 4vw 3vh;
+}
+/* end of sidebar  */
+
+/* Main css begins */
+.Main_head {
+    width: 81vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.total {
+    width: 81vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+.ship_stat {
+    width: 76vw;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    border-radius: 5px;
+    border: 1px solid rgb(48, 185, 30);
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+.geo {
+    width: 76vw;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    border-radius: 5px;
+    border: 1px solid rgb(48, 185, 30);
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.head_text {
+    width: 65vw;
+    height: 5vh;
+    font-size: 4vh;
+    font-weight: bold;
+    text-align: left;
+}
+.calender {
+    padding-right: 10vw;
+}
+input[type="date"] {
+    width: 8vw;
+    height: 5vh;
+    display: flex;
+    background-color: rgb(221, 218, 218);
+    border-radius: 5px;
+    border: 1px solid grey;
+    justify-items: center;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: absolute;
+}
+.total_size {
+    width: 17vw;
+    height: 13vh;
+    display: flex;
+    background-color: white;
+    flex-direction: row;
+    border: 1px solid rgb(48, 185, 30);
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.t_ship_logo {
+    width: 4.5vw;
+    height: 9vh;
+    display: flex;
+    background-color: rgb(221, 218, 218);
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    border-radius: 50%;
+}
+.t_ship_logo2 {
+    width: 3vw;
+    height: 4vh;
+    background-image: url('static/images/moto.png');
+    background-repeat: no-repeat;
+    background-size: 3vw 4vh;
+
+}
+.t_ship_logo3 {
+    width: 3vw;
+    height: 4vh;
+    background-image: url('static/images/t_order.png');
+    background-repeat: no-repeat;
+    background-size: 3vw 4vh;
+
+}
+.t_ship_logo4 {
+    width: 3vw;
+    height: 4vh;
+    background-image: url('static/images/pendorder.png');
+    background-repeat: no-repeat;
+    background-size: 3vw 4vh;
+
+}
+.t_ship_logo5 {
+    width: 3vw;
+    height: 4vh;
+    background-image: url('static/images/money.jpg');
+    background-repeat: no-repeat;
+    background-size: 3vw 4vh;
+
+}
+.t_ship {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.t_ship_text {
+    width: 7vw;
+    font-size: 2vh;
+    color: gray;
+}
+.t_ship_value {
+    width: 7vw;
+    font-size: 3vh;
+    color:  rgb(48, 185, 30);
+    font-weight: bold;
+    border-top: 2px;
+}
+.ship_text {
+    width: 72vw;
+    height: 9vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.ship_text1 {
+    width: 60vw;
+    height: 9vh;
+    font-size: 4vh;
+    color:  rgb(48, 185, 30);
+    font-weight: bold;
+}
+.ship_text2 {
+    width: 12vw;
+    height: 9vh;
+    font-size: 2vh;
+    text-align: center;
+    padding-top: 3vh;
+}
+.ship_text2 a {
+    text-decoration-line: none;
+    color:  rgb(48, 185, 30);
+}
+.ship_head {
+    width: 73vw;
+    height: 10vh;
+    border: 1px solid rgb(48, 185, 30);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.ship_head p {
+    color: rgb(48, 185, 30);
+    font-size: 2vh;
+    font-weight: bold;
+}
+.ship_others {
+    width: 73vw;
+    height: 3rem;
+    border-bottom: 1px solid rgb(48, 185, 30);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+.ship_others p {
+    color:  rgb(48, 185, 30);
+    font-size: 2vh;
+}
+.geo_head {
+    width: 72vw;
+    height: 3vh;
+    display: flex;
+    align-items: center;
+    color: rgb(48, 185, 30);
+    font-weight: bold;
+}
+.geo_map {
+    width: 72vw;
+    height: 35vh;
+    display: flex;
+    background-image: url('static/images/geo_map.jpg');
+    background-repeat: no-repeat;
+    background-size: 72vw 40vh;
+    border-radius: 5px;
+}
+.geo_p_bar {
+    width: 72vw;
+    height: 4vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+.geo_p_bar_text {
+    font-size: 2vh;
+}
+.p_bar {
+    width: 16vw;
+    height: 1vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+.p_bar_l {
+    background-color: rgb(221, 218, 218);
+    border: 1px solid rgb(221, 218, 218);
+    border-radius: 1.5em;
+}
+.pb1 {
+    position: relative;
+    width: 10em;
+    height: 1em;
+    color: rgb(48, 185, 30);
+}
+.pb1::before {
+    content: attr(data-label);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    border-radius: 1.5em;
+    width: calc(var(--width, 0) * 1%);
+    min-width: 1vh;
+    max-width: 100%;
+    background-color: rgb(48, 185, 30);
+}
+.p_bar p {
+    font-size: 2vh;
+}
