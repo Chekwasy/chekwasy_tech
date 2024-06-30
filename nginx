@@ -17,6 +17,8 @@ server {
 #disable nginix config file
 sudo unlink /etc/nginx/sites-enabled/default
 
+sudo ln -s /etc/nginx/sites-available/vite_app /etc/nginx/sites-enabled/
+
 #check with this if okay
 sudo nginx -t
 
